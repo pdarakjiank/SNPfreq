@@ -1,0 +1,14 @@
+D:\SNPfreq\SNPfreq\bin\Debug\SNPfreq.exe.config
+D:\SNPfreq\SNPfreq\obj\Debug\SNPfreq.SNPfreq_form.resources
+D:\SNPfreq\SNPfreq\obj\Debug\SNPfreq.Properties.Resources.resources
+D:\SNPfreq\SNPfreq\obj\Debug\SNPfreq.csproj.GenerateResource.Cache
+D:\SNPfreq\SNPfreq\bin\Debug\SNPfreq.exe
+D:\SNPfreq\SNPfreq\bin\Debug\SNPfreq.pdb
+D:\SNPfreq\SNPfreq\obj\Debug\SNPfreq.exe
+D:\SNPfreq\SNPfreq\obj\Debug\SNPfreq.pdb
+D:\SNPfreq\SNPfreq\obj\Debug\SNPfreq.csprojResolveAssemblyReference.cache
+D:\SNPfreq\SNPfreq\bin\Debug\SNPfreq.XML
+D:\SNPfreq\SNPfreq\bin\Debug\SNPfreq.exe.manifest
+D:\SNPfreq\SNPfreq\bin\Debug\SNPfreq.application
+D:\SNPfreq\SNPfreq\obj\Debug\SNPfreq.exe.manifest
+D:\SNPfreq\SNPfreq\obj\Debug\SNPfreq.application

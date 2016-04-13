@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SNPfreq</name>
+    </assembly>
+    <members>
+        <member name="T:SNPfreq.FileVerifier">
+            <summary>
+            This class is used to verify if a file exists or not
+            </summary>
+        </member>
+        <member name="M:SNPfreq.FileVerifier.verifyFileExistence(System.String,System.String,System.String,SNPfreq.SNPfreq_form)">
+            <summary>
+            This method verifies if a file exists already. If it does, it asks the user
+            if it should be overwritten. If not, it gives the user an opportunity to  rename the old file.
+            </summary>
+            <param name="pathToFile">Path to the file</param>
+            <param name="fileDescriptor">The type of file (masked sequence, filtered, result, gene list)</param>
+            <param name="outputFolder">Output folder path</param>
+            <param name="formObject">Form object</param>
+        </member>
+        <member name="T:SNPfreq.SeqMasker">
+            <summary>
+             SeqMasker class: generates sequences of "x" and "s", where 
+                * x is a base that is not a snp, and s is a base with a snp.
+                * So, for instance, a specific interval of 5 bases would be 
+                * represented by "xxxxx". If a snp is found in the 3rd base, 
+                * the sequence would become "xxsxx".*/
+            </summary>
+        </member>
+        <member name="T:SNPfreq.SNPfreq_form">
+            <summary>
+            SNPfreq_form class: provides a graphical interface for the user to be able to enter
+            the path to a snps list file (tab separated text file containing two columns:
+            chromosome and snp location), a file with genomic locations of interest (also
+            tab separated; it should contain 4 columns: chromosome, start, end, feature id), 
+            the path to the output directory (where the user would like result files to be written 
+            to), the size of the window (in base-pair) where the tool will search for snps,
+            and the minimum number of snps to look for in each window.
+            </summary>
+        </member>
+        <member name="M:SNPfreq.SNPfreq_form.#ctor">
+            <summary>
+            SNPfreq_form constructor
+            </summary>
+        </member>
+        <member name="M:SNPfreq.SNPfreq_form.seqFolderPathButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Open dialog to select file with sequences loci 
+            The file should be tab separated text file containing
+            four columns: chromosome, start, end, and feature id
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SNPfreq.SNPfreq_form.snpFolderPathButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Open dialog to select file with snps loci.
+            It should be a tab separated text file containing two columns:
+            chromosome and snp location
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SNPfreq.SNPfreq_form.selectOuputpuFolderButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Open dialog to select folder where output files will be placed
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SNPfreq.SNPfreq_form.createTaggedSeqButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event-handler that generates a snp-tagged sequence,
+            i.e., a sequence of "x" and "s" characters, where
+            "s" represents the presence of a snp at a specific 
+            index in the "x" string
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SNPfreq.SNPfreq_form.filterButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event-handler calls a method to extract the masked sequences that contain
+            number of snps equal or greater than the value entered by the user.
+            This way we can run moving windows on a smaller file.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SNPfreq.SNPfreq_form.runMovingWinButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event-handler that calls a method to look for and count the number of 
+            snps in each x bp window within each interval
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SNPfreq.SNPfreq_form.extractGenesButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event-Handler that will call a method to extract the (unique) gene symbol and Ensembl ID
+            from the results file and write those to output. This list can be interpreted as the list
+            of genes the contain x bp windows with n or more snps.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:SNPfreq.SNPfreq_form.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SNPfreq.SNPfreq_form.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SNPfreq.SNPfreq_form.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:SNPfreq.SNPfreq_form.outputFolderTextBox">
+            <summary>
+            Internally accessible for file existence verification
+            </summary>
+        </member>
+        <member name="M:SNPfreq.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:SNPfreq.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:SNPfreq.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:SNPfreq.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

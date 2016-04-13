@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SNPfreq.exe" version="1.0.0.0" publicKeyToken="4171c468d842a7e4" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SNPfreq" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SNPfreq.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SNPfreq.exe" size="22976">
+      <assemblyIdentity name="SNPfreq" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>H38J8sWzOfyLEn4YKsaFMTpb8L4OMjkk6+tMF8pWp7Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="SNPfreq.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=OHSUM01\darakjia" issuerKeyHash="d2b2ece1e52445735fe584f04938267fa076cdb0" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>nDKmvjOQy2oLgG6xgTknM2Ab+BLEjCxGq7NokqdzNYg=</DigestValue></Reference></SignedInfo><SignatureValue>WLd5ErUjRdLNl3UY7R5h9ScydmmvsWt/Lga1krpbpMWuK7cXKrKYQ9B+Ex/fz1nkHjD/cQ8dX8WLWj337M8seSMlpc40t4CT7aAftXdc2IyEdXK3JlNC5UZJegRM4XyenTcKBzOgxqQxBRfFe+XD5+N9zoyq43FHJUhJKRiSIUg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>w7WIzVPKUluGn7A8rv45iuGFGI3yfKTgiUVwzgY3BUsMv0tAUj9rmbVkFBNwDn351x1bjY/oZ4CJQ88bJWBOC7x5zpJlOmRTC2MnJ8OIg/F4ab5NEv3BsBDPeNZz/9zwkDIvv/QSPXByKJUWkkRwN37wBmiLvYZsI61R3eSlzg8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="883573a79268b3ab462c8cc412f81b6033273981b16e800b6acb9033bea6329c" Description="" Url=""><as:assemblyIdentity name="SNPfreq.exe" version="1.0.0.0" publicKeyToken="4171c468d842a7e4" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=OHSUM01\darakjia</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>IKFWXvVuR3H7+pYQyI/iQkKykEOIjfDZfry0YbiimUI=</DigestValue></Reference></SignedInfo><SignatureValue>s0dbNiJsJPPKug9hbe1YCkTX/eyIpVxGsw1UGg5ptlejqO4RSar0JS95kNO/oLhSqVXyU/uXZwuDbXmF+hTwTrAJ2+M45FosrE3Cc4mLF4ZKKnn1/KqAd6celQgojh7vLUQcuhD8lzUXkOmTCcEitSYg3LCpB05kpFF3IDVEUNo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>w7WIzVPKUluGn7A8rv45iuGFGI3yfKTgiUVwzgY3BUsMv0tAUj9rmbVkFBNwDn351x1bjY/oZ4CJQ88bJWBOC7x5zpJlOmRTC2MnJ8OIg/F4ab5NEv3BsBDPeNZz/9zwkDIvv/QSPXByKJUWkkRwN37wBmiLvYZsI61R3eSlzg8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQaoEOVWM/wYJJeW/ZDztuizANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAATwBIAFMAVQBNADAAMQBcAGQAYQByAGEAawBqAGkAYTAeFw0xNTA3MTMyMzA2NTNaFw0xNjA3MTMwNTA2NTNaMCsxKTAnBgNVBAMeIABPAEgAUwBVAE0AMAAxAFwAZABhAHIAYQBrAGoAaQBhMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDtYjNU8pSW4afsDyu/jmK4YUYjfJ8pOCJRXDOBjcFSwy/S0BSP2uZtWQUE3AOffnXHVuNj+hngIlDzxslYE4LvHnOkmU6ZFMLYycnw4iD8Xhpvk0S/cGwEM941nP/3PCQMi+/9BI9cHIolRaSRHA3fvAGaIu9hmwjrVHd5KXODwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAIrhEoujL/EnYZsICX7PrYf3JfrtCljLEimWYqF3Akxsl+exV5y6RDLkTHyG9RnypwZFOe7DT/3QDXPSZJJr2G0tue+mBaOydRL0oVwAn5RTukxcFs4lky6izBGE7gvqJbgzjDMXzudaFD0p13uXynpvXm64fEitEs4bN0g7yu0O</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
